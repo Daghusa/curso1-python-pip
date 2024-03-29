@@ -6,7 +6,7 @@ def get_population():
   return keys, values
 
 def population_by_country(data, country):
-  result = list(filter(lambda item: item['Country'] == country,data))
+  result = list(filter(lambda item: item['Country/Territory'] == country,data))
   return result
 '''
 # buena practica es nombrar de una forma diciente
@@ -27,5 +27,5 @@ def get_population(country):
   return labels,values
 
 def population_by_country(data, country):
-  result = list(filter(lambda item: item['Country'] == country,data))
+  result = list(filter(lambda item: item['Country/Territory'] == country,data))
   return result
